@@ -22,19 +22,29 @@
   {
       name = ModuleB9PartSwitch
       moduleID = size
+      switcherDescription = Size
+      switcherDescriptionPlural = Sizes
+      affectDragCubes = True
+      affectFARVoxels = True
+      parentID = fuelSwitch
+
       //use original 1.25m part model
       SUBTYPE
       {
-          name = 1.25m
-          transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1_1(Clone)
+        name = 1.25m
+        transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1_1(Clone)
+        defaultSubtypePriority = 1
       }
 
-      //switch to 1.5m part model. Cosmetic switch only, fuel and mass do not change
+      //switch to 1.5m part model and volume
       SUBTYPE
       {
-          name = 1.5m
-          transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p2_1(Clone)
+        name = 1.5m
+        transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p2_1(Clone)
+        defaultSubtypePriority = 0
 
+        // Total Volume = 280
+        volumeAddedToParent = 80
       }
   }
 }
@@ -51,19 +61,29 @@
   {
       name = ModuleB9PartSwitch
       moduleID = size
+      switcherDescription = Size
+      switcherDescriptionPlural = Sizes
+      affectDragCubes = True
+      affectFARVoxels = True
+      parentID = fuelSwitch
+
       //use original 1.25m part model
       SUBTYPE
       {
-          name = 1.25m
-          transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1_2(Clone)
+        name = 1.25m
+        transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1_2(Clone)
+        defaultSubtypePriority = 1
       }
 
-      //switch to 1.5m part model. Cosmetic switch only, fuel and mass do not change
+      //switch to 1.5m part model and volume
       SUBTYPE
       {
-          name = 1.5m
-          transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p2_2(Clone)
+        name = 1.5m
+        transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p2_2(Clone)
+        defaultSubtypePriority = 0
 
+        // Total Volume = 580
+        volumeAddedToParent = 180
       }
   }
 }
@@ -80,18 +100,29 @@
   {
       name = ModuleB9PartSwitch
       moduleID = size
+      switcherDescription = Size
+      switcherDescriptionPlural = Sizes
+      affectDragCubes = True
+      affectFARVoxels = True
+      parentID = fuelSwitch
+
       //use original 1.25m part model
       SUBTYPE
       {
-          name = 1.25m
-          transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1_3(Clone)
+        name = 1.25m
+        transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1_3(Clone)
+        defaultSubtypePriority = 1
       }
 
-      //switch to 1.5m part model. Cosmetic switch only, fuel and mass do not change
+      //switch to 1.5m part model and volume
       SUBTYPE
       {
-          name = 1.5m
-          transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p2_3(Clone)
+        name = 1.5m
+        transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p2_3(Clone)
+        defaultSubtypePriority = 0
+
+        // Total Volume = 1160
+        volumeAddedToParent = 360
       }
   }
 }
@@ -110,18 +141,29 @@
   {
       name = ModuleB9PartSwitch
       moduleID = size
+      switcherDescription = Size
+      switcherDescriptionPlural = Sizes
+      affectDragCubes = True
+      affectFARVoxels = True
+      parentID = fuelSwitch
+
       //use original 1.25m part model
       SUBTYPE
       {
-          name = 1.25m
-          transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1_4(Clone)
+        name = 1.25m
+        transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1_4(Clone)
+        defaultSubtypePriority = 1
       }
 
-      //switch to 1.5m part model. Cosmetic switch only, fuel and mass do not change
+      //switch to 1.5m part model and volume
       SUBTYPE
       {
-          name = 1.5m
-          transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p2_4(Clone)
+        name = 1.5m
+        transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p2_4(Clone)
+        defaultSubtypePriority = 0
+
+        // Total Volume = 2300
+        volumeAddedToParent = 700
       }
   }
 }
@@ -139,18 +181,30 @@
   {
       name = ModuleB9PartSwitch
       moduleID = size
+      switcherDescription = Size
+      switcherDescriptionPlural = Sizes
+      affectDragCubes = True
+      affectFARVoxels = True
+      parentID = fuelSwitch
+
+
       //use original 1.25m part model
       SUBTYPE
       {
-          name = 1.25m
-          transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1_1(Clone)
+        name = 1.25m
+        transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1_1(Clone)
+        defaultSubtypePriority = 1
       }
 
-      //switch to 1.5m part model. Cosmetic switch only, fuel and mass do not change
+      //switch to 1.5m part model and volume
       SUBTYPE
       {
-          name = 1.5m
-          transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1p2_1(Clone)
+        name = 1.5m
+        transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1p2_1(Clone)
+        defaultSubtypePriority = 0
+
+        // Total Volume = 360
+        volumeAddedToParent = 160
       }
   }
 }
@@ -167,18 +221,29 @@
   {
       name = ModuleB9PartSwitch
       moduleID = size
+      switcherDescription = Size
+      switcherDescriptionPlural = Sizes
+      affectDragCubes = True
+      affectFARVoxels = True
+      parentID = fuelSwitch
+
       //use original 1.25m part model
       SUBTYPE
       {
-          name = 1.25m
-          transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1_2(Clone)
+        name = 1.25m
+        transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1_2(Clone)
+        defaultSubtypePriority = 1
       }
 
-      //switch to 1.5m part model. Cosmetic switch only, fuel and mass do not change
+      //switch to 1.5m part model and volume
       SUBTYPE
       {
-          name = 1.5m
-          transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1p2_2(Clone)
+        name = 1.5m
+        transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1p2_2(Clone)
+        defaultSubtypePriority = 0
+
+        // Total Volume = 740
+        volumeAddedToParent = 340
       }
   }
 }
@@ -195,18 +260,29 @@
   {
       name = ModuleB9PartSwitch
       moduleID = size
+      switcherDescription = Size
+      switcherDescriptionPlural = Sizes
+      affectDragCubes = True
+      affectFARVoxels = True
+      parentID = fuelSwitch
+
       //use original 1.25m part model
       SUBTYPE
       {
-          name = 1.25m
-          transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1_3(Clone)
+        name = 1.25m
+        transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1_3(Clone)
+        defaultSubtypePriority = 1
       }
 
-      //switch to 1.5m part model. Cosmetic switch only, fuel and mass do not change
+      //switch to 1.5m part model and volume
       SUBTYPE
       {
-          name = 1.5m
-          transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1p2_3(Clone)
+        name = 1.5m
+        transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1p2_3(Clone)
+        defaultSubtypePriority = 0
+
+        // Total Volume = 1100
+        volumeAddedToParent = 500
       }
   }
 }
@@ -223,18 +299,29 @@
   {
       name = ModuleB9PartSwitch
       moduleID = size
+      switcherDescription = Size
+      switcherDescriptionPlural = Sizes
+      affectDragCubes = True
+      affectFARVoxels = True
+      parentID = fuelSwitch
+
       //use original 1.25m part model
       SUBTYPE
       {
-          name = 1.25m
-          transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1_4(Clone)
+        name = 1.25m
+        transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1_4(Clone)
+        defaultSubtypePriority = 1
       }
 
-      //switch to 1.5m part model. Cosmetic switch only, fuel and mass do not change
+      //switch to 1.5m part model and volume
       SUBTYPE
       {
-          name = 1.5m
-          transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1p2_4(Clone)
+        name = 1.5m
+        transform = TantaresLV/Parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1p2_4(Clone)
+        defaultSubtypePriority = 0
+
+        // Total Volume = 1460
+        volumeAddedToParent = 660
       }
   }
 }
