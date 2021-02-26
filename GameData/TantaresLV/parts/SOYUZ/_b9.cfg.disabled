@@ -1,0 +1,806 @@
+
+
+
+// The default Soyuz launcher in Tantares comes in a 1.25m>1.875m>1.25m size. There is also an oversized 1.25m>1.875m soyuz variant. More accurate 1.25m>1.875m>1.5m models are included but unused.
+
+
+// This patch uses B9 Part switch to add a 1.5m switch to the cylindrical 1.25m upper stage tanks. It also adds a switch to the narrow end of the 1.25m to 1.875m conical adapter tanks to 1.5m
+
+
+// This is not a proper mesh switch, this is swapping full models. As such the models overlap with the original 1.25m model when switched to 1.5m. This is not noticeable except at the endcaps of the fuel tanks
+
+
+// Switching is cosmetic only for now. Fuel quantity and mass does not change currently as a whole fuel switch set up would be required. Thus the performance will be the same as the 1.25m Soyuz
+
+
+// 1.5m upper stage engine, decoupler and staging plate added as new parts as overlapping models make switching problematic.
+
+
+// This patch was written by KSP forum User Zorg. Please ping me on the Tantares thread if there are any issues and don't bother Beale about it :P
+
+
+// Exisitng craft should not be affected but use at your own risk.
+
+
+// TO USE THIS PATCH CHANGE THE FILE EXTENSION FROM ".cfg.disabled" to .cfg
+
+
+// REQUIRES MODULE MANAGER AND B9PARTSWITCH
+
+
+//--------------------------------------------------//
+
+ 
+
+// Cylindrical Fuel Tanks
+
+
+@PART[tantares_lv_fuel_tank_s1_1]:AFTER[TantaresLV]:NEEDS[B9PartSwitch] //'Size 1 fuel tank A'
+
+
+{
+
+
+  //Add 1.5m model to the PART before B9 can use it to switch
+
+
+  MODEL
+
+
+  {
+
+
+    model = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1p2_1
+
+
+  }
+
+ 
+
+  MODULE
+
+
+  {
+
+
+      name = ModuleB9PartSwitch
+
+
+      moduleID = size
+
+
+      //use original 1.25m part model
+
+
+      SUBTYPE
+
+
+      {
+
+
+          name = 1.25m
+
+
+          transform = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1_1(Clone)
+
+
+      }
+
+ 
+
+      //switch to 1.5m part model. Cosmetic switch only, fuel and mass do not change
+
+
+      SUBTYPE
+
+
+      {
+
+
+          name = 1.5m
+
+
+          transform = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1p2_1(Clone)
+
+ 
+
+      }
+
+
+  }
+
+
+}
+
+ 
+
+@PART[tantares_lv_fuel_tank_s1_2]:NEEDS[B9PartSwitch] //'Size 1 fuel tank B'
+
+
+{
+
+
+  //Add 1.5m model to the PART before B9 can use it to switch
+
+
+  MODEL
+
+
+  {
+
+
+    model = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1p2_2
+
+
+  }
+
+ 
+
+  MODULE
+
+
+  {
+
+
+      name = ModuleB9PartSwitch
+
+
+      moduleID = size
+
+
+      //use original 1.25m part model
+
+
+      SUBTYPE
+
+
+      {
+
+
+          name = 1.25m
+
+
+          transform = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1_2(Clone)
+
+
+      }
+
+ 
+
+      //switch to 1.5m part model. Cosmetic switch only, fuel and mass do not change
+
+
+      SUBTYPE
+
+
+      {
+
+
+          name = 1.5m
+
+
+          transform = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1p2_2(Clone)
+
+ 
+
+      }
+
+
+  }
+
+
+}
+
+ 
+
+@PART[tantares_lv_fuel_tank_s1_3]:NEEDS[B9PartSwitch] // long Soyuz upper stage tank 'Size 1 fuel tank C'
+
+
+{
+
+
+  //Add 1.5m model to the PART before B9 can use it to switch
+
+
+  MODEL
+
+
+  {
+
+
+    model = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1p2_3
+
+
+  }
+
+ 
+
+  MODULE
+
+
+  {
+
+
+      name = ModuleB9PartSwitch
+
+
+      moduleID = size
+
+
+      //use original 1.25m part model
+
+
+      SUBTYPE
+
+
+      {
+
+
+          name = 1.25m
+
+
+          transform = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1_3(Clone)
+
+
+      }
+
+ 
+
+      //switch to 1.5m part model. Cosmetic switch only, fuel and mass do not change
+
+
+      SUBTYPE
+
+
+      {
+
+
+          name = 1.5m
+
+
+          transform = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1p2_3(Clone)
+
+
+      }
+
+
+  }
+
+
+}
+
+
+
+
+ 
+
+@PART[tantares_lv_fuel_tank_s1_4]:NEEDS[B9PartSwitch] // long Soyuz upper stage tank 'Size 1 fuel tank D'
+
+
+{
+
+
+  //Add 1.5m model to the PART before B9 can use it to switch
+
+
+  MODEL
+
+
+  {
+
+
+    model = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1p2_4
+
+
+  }
+
+ 
+
+  MODULE
+
+
+  {
+
+
+      name = ModuleB9PartSwitch
+
+
+      moduleID = size
+
+
+      //use original 1.25m part model
+
+
+      SUBTYPE
+
+
+      {
+
+
+          name = 1.25m
+
+
+          transform = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1_4(Clone)
+
+
+      }
+
+ 
+
+      //switch to 1.5m part model. Cosmetic switch only, fuel and mass do not change
+
+
+      SUBTYPE
+
+
+      {
+
+
+          name = 1.5m
+
+
+          transform = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1p2_4(Clone)
+
+
+      }
+
+
+  }
+
+
+}
+
+ 
+
+// Conical Adapter Fuel Tanks
+
+
+@PART[tantares_lv_fuel_tank_s1p5_s1_1]:NEEDS[B9PartSwitch] // 'Size 1 to size 1.5 adapter A'
+
+
+{
+
+
+  //Add 1.5m model to the PART before B9 can use it to switch
+
+
+  MODEL
+
+
+  {
+
+
+    model = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1p2_1
+
+
+  }
+
+ 
+
+  MODULE
+
+
+  {
+
+
+      name = ModuleB9PartSwitch
+
+
+      moduleID = size
+
+
+      //use original 1.25m part model
+
+
+      SUBTYPE
+
+
+      {
+
+
+          name = 1.25m
+
+
+          transform = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1_1(Clone)
+
+
+      }
+
+ 
+
+      //switch to 1.5m part model. Cosmetic switch only, fuel and mass do not change
+
+
+      SUBTYPE
+
+
+      {
+
+
+          name = 1.5m
+ 
+
+
+          transform = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1p2_1(Clone)
+
+
+      }
+
+
+  }
+
+
+}
+
+ 
+
+@PART[tantares_lv_fuel_tank_s1p5_s1_2]:NEEDS[B9PartSwitch] // 'Size 1 to size 1.5 adapter B'
+
+
+{
+
+
+  //Add 1.5m model to the PART before B9 can use it to switch
+
+
+  MODEL
+
+
+  {
+
+
+    model = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1p2_2
+
+
+  }
+
+ 
+
+  MODULE
+
+
+  {
+
+
+      name = ModuleB9PartSwitch
+
+
+      moduleID = size
+
+
+      //use original 1.25m part model
+
+
+      SUBTYPE
+
+
+      {
+
+
+          name = 1.25m
+
+
+          transform = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1_2(Clone)
+
+
+      }
+
+ 
+
+      //switch to 1.5m part model. Cosmetic switch only, fuel and mass do not change
+
+
+      SUBTYPE
+
+
+      {
+
+
+          name = 1.5m
+
+
+          transform = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1p2_2(Clone)
+
+
+      }
+
+
+  }
+
+
+}
+
+ 
+
+@PART[tantares_lv_fuel_tank_s1p5_s1_3]:NEEDS[B9PartSwitch] // 'Size 1 to size 1.5 adapter C'
+
+
+{
+
+
+  //Add 1.5m model to the PART before B9 can use it to switch
+
+
+  MODEL
+
+
+  {
+
+
+    model = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1p2_3
+
+
+  }
+
+ 
+
+  MODULE
+
+
+  {
+
+
+      name = ModuleB9PartSwitch
+
+
+      moduleID = size
+
+
+      //use original 1.25m part model
+
+
+      SUBTYPE
+
+
+      {
+
+
+          name = 1.25m
+
+
+          transform = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1_3(Clone)
+
+
+      }
+
+ 
+
+      //switch to 1.5m part model. Cosmetic switch only, fuel and mass do not change
+
+
+      SUBTYPE
+
+
+      {
+
+
+          name = 1.5m
+
+
+          transform = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1p2_3(Clone)
+
+
+      }
+
+
+  }
+
+
+}
+
+ 
+
+@PART[tantares_lv_fuel_tank_s1p5_s1_4]:NEEDS[B9PartSwitch] // 'Size 1 to size 1.5 adapter D'
+
+
+{
+
+
+  //Add 1.5m model to the PART before B9 can use it to switch
+
+
+  MODEL
+
+
+  {
+
+
+    model = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1p2_4
+
+
+  }
+
+ 
+
+  MODULE
+
+
+  {
+
+
+      name = ModuleB9PartSwitch
+
+
+      moduleID = size
+
+
+      //use original 1.25m part model
+
+
+      SUBTYPE
+
+
+      {
+
+
+          name = 1.25m
+
+
+          transform = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1_4(Clone)
+
+
+      }
+
+ 
+
+      //switch to 1.5m part model. Cosmetic switch only, fuel and mass do not change
+
+
+      SUBTYPE
+
+
+      {
+
+
+          name = 1.5m
+
+
+          transform = TantaresLV/parts/SOYUZ/tantares_lv_fuel_tank_s1p5_s1p2_4(Clone)
+
+
+      }
+
+
+  }
+
+
+}
+
+ 
+
+//Decouplers and staging plate
+
+
++PART[castor_truss_decoupler_s1_1]:NEEDS[B9PartSwitch] // 1.25m truss decoupler 'Size 1 T decoupler'
+
+
+{
+
+
+  @name = castor_truss_decoupler_s1p2_1
+
+
+  @title = Size 1p2 T Decoupler
+
+
+  @bulkheadProfiles = size1p2
+
+
+  //Add 1.5m model to the PART before B9 can use it to switch
+
+
+  @MODEL
+
+
+  {
+
+
+    @model = TantaresLV/parts/ANY/TRUSS_DECOUPLERS/castor_truss_decoupler_s1p2_1
+
+
+  }
+
+
+}
+
+ 
+
++PART[circinus_staging_plate_s1_1]:NEEDS[B9PartSwitch] // 1.25m plate for hot staging 'Circinus size 1 staging plate'
+
+
+{
+
+
+  @name = circinus_staging_plate_s1p2_1
+
+
+  @title = Circinus size 1p2 staging plate
+
+
+  @bulkheadProfiles = size1p2
+
+
+  @MODEL
+
+
+  {
+
+
+    @model = TantaresLV/parts/ANY/STAGING_PLATES/circinus_staging_plate_s1p2_1
+
+
+  }
+
+
+}
+
+ 
+
+//Upper stage engine
+
+
++PART[tantares_lv_engine_s1_3]:NEEDS[B9PartSwitch] // Soyuz upper stage engine 'RD0110A Litenugle'
+
+
+{
+
+
+  @name = tantares_lv_engine_s1p2_3
+
+
+  @title = Tantares RD-0110A "Litenugle" Rocket Engine 1.5m
+
+
+  @tags = 1.5 soyuz tantares ?lfo rocket engine propulsion
+
+
+  @bulkheadProfiles = size1p2
+
+
+  //
+
+
+  @MODEL
+
+
+  {
+
+
+    @model = TantaresLV/parts/SOYUZ/tantares_lv_engine_s1p2_3
+
+
+  }
+
+
+  MODULE
+
+
+  {
+
+
+    name = ModuleJettison
+
+
+    jettisonName = fairing1p2
+
+
+    bottomNodeName = bottom
+
+
+    isFairing = True
+
+
+    jettisonedObjectMass = 0.1
+
+
+    jettisonForce = 5
+
+
+    jettisonDirection = 0 0 1
+
+
+  }
+
+
+}
+
